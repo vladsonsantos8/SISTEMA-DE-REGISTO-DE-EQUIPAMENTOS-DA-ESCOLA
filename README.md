@@ -72,4 +72,19 @@ A listagem deve permitir ao usuário visualizar rapidamente:
 Não pode depender de internet ou servidores externos.
 A escola deve conseguir usar apenas com HTML + PHP + MySQL no computador local.
 
-	  
+	  1. Paleta Profissional (Azul + Cinza)
+
+Recomendada para sistemas escolares e administrativos.
+	•	Azul principal: #1A73E8
+	•	Azul claro (hover): #4D9FFF
+	•	Cinza claro (fundo): #F4F6F8
+	•	Cinza médio (borda/linhas): #D0D4D8
+	•	Preto suave (texto): #333333
+	•	Verde (funcional): #34A853
+	•	Vermelho (avariado): #EA4335
+
+✔ limpa
+✔ profissional
+✔ moderno 
+✔ combina com sites escolares 
+
