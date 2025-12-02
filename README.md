@@ -176,116 +176,147 @@ Regras:
 
 
 
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Achados e Perdidos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="container-principal">
+
+        <!-- Sidebar -->
+        <aside class="barra-lateral">
+            <h2 class="titulo-sistema">Achados & Perdidos</h2>
+
+            <nav class="menu">
+                <a href="#" class="item-menu">Dashboard</a>
+                <a href="#" class="item-menu">Equipamentos</a>
+                <a href="#" class="item-menu">Reivindicações</a>
+                <a href="#" class="item-menu">Devoluções</a>
+                <a href="#" class="item-menu">Configurações</a>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo -->
+        <main class="conteudo">
+            <h1 class="titulo-pagina">Resumo Geral</h1>
+
+            <div class="area-cartoes">
+
+                <div class="cartao">
+                    <p class="descricao-cartao">Total de Equipamentos</p>
+                    <h2 class="valor-cartao">32</h2>
+                </div>
+
+                <div class="cartao">
+                    <p class="descricao-cartao">Equipamentos Reivindicados</p>
+                    <h2 class="valor-cartao">7</h2>
+                </div>
+
+                <div class="cartao">
+                    <p class="descricao-cartao">Equipamentos Devolvidos</p>
+                    <h2 class="valor-cartao">19</h2>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
 }
 
-/* CABEÇALHO */
-#cabecalho {
-    background: #1e3a8a;
-    padding: 20px;
-    color: white;
-    text-align: center;
-}
-
-/* CONTAINER GERAL */
-#container {
+.container-principal {
     display: flex;
+    height: 100vh;
 }
 
-/* MENU LATERAL */
-#menu_lateral {
-    width: 220px;
-    background: #0f172a;
-    min-height: 100vh;
-    padding-top: 20px;
+/* BARRA LATERAL */
+.barra-lateral {
+    width: 250px;
+    background: #1e3a5f;
+    color: white;
+    padding: 20px;
 }
 
-#menu_lateral ul {
-    list-style: none;
-    padding: 0;
+.titulo-sistema {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-#menu_lateral ul li {
-    margin-bottom: 15px;
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-#menu_lateral ul li a {
+.item-menu {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    display: block;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
-#menu_lateral ul li a:hover {
-    background: #1e293b;
+.item-menu:hover {
+    background: #2f548a;
 }
 
 /* CONTEÚDO PRINCIPAL */
-#conteudo {
+.conteudo {
     flex: 1;
-    padding: 25px;
+    padding: 40px;
 }
 
-/* CARDS */
-#caixas_resumo {
-    display: flex;
-    gap: 20px;
+.titulo-pagina {
     margin-bottom: 30px;
+    font-size: 28px;
 }
 
-.caixa {
-    background: white;
-    padding: 20px;
+/* CARTÕES */
+.area-cartoes {
+    display: flex;
+    gap: 25px;
+}
+
+.cartao {
     width: 250px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 8px #cccccc;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
 }
 
-.numero_caixa {
-    font-size: 32px;
-    font-weight: bold;
-    color: #1e3a8a;
+.descricao-cartao {
+    font-size: 16px;
+    color: #555;
 }
 
-/* TABELA */
-#tabela_equipamentos {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
+.valor-cartao {
+    font-size: 40px;
+    color: #1e3a5f;
+    margin-top: 15px;
 }
-
-#tabela_equipamentos th,
-#tabela_equipamentos td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-    text-align: left;
-}
-
-#tabela_equipamentos th {
-    background: #1e3a8a;
-    color: white;
-}
-
-.btn_ver {
-    background: #1e3a8a;
-    color: white;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn_ver:hover {
-    background: #3b82f6;
-}
-
-
-
 
