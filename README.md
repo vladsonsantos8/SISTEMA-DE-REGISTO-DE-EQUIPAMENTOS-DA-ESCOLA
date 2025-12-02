@@ -166,3 +166,126 @@ Sem alterações.
 
 Regras:
 	•	Remover dependências transitivas.
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+/* CABEÇALHO */
+#cabecalho {
+    background: #1e3a8a;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* CONTAINER GERAL */
+#container {
+    display: flex;
+}
+
+/* MENU LATERAL */
+#menu_lateral {
+    width: 220px;
+    background: #0f172a;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+#menu_lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu_lateral ul li {
+    margin-bottom: 15px;
+}
+
+#menu_lateral ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+#menu_lateral ul li a:hover {
+    background: #1e293b;
+}
+
+/* CONTEÚDO PRINCIPAL */
+#conteudo {
+    flex: 1;
+    padding: 25px;
+}
+
+/* CARDS */
+#caixas_resumo {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.caixa {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px #cccccc;
+    text-align: center;
+}
+
+.numero_caixa {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+/* TABELA */
+#tabela_equipamentos {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#tabela_equipamentos th,
+#tabela_equipamentos td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#tabela_equipamentos th {
+    background: #1e3a8a;
+    color: white;
+}
+
+.btn_ver {
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_ver:hover {
+    background: #3b82f6;
+}
+
+
+
+
